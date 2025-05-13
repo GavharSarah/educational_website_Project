@@ -56,8 +56,8 @@ def register():
         print("Invalid role. Use 'student' or 'teacher'.")
         return None
 
-    balance = "100.00"  # Initial balance
-    purchased_ids = ""  # Initial purchased courses
+    balance = "100.00"
+    purchased_ids = ""
     user = [email, hashed_password, role, name, balance, purchased_ids]
     save_user(user)
     print("Registration successful! You can now log in.")
